@@ -1,45 +1,31 @@
-import IndexPage from 'components/IndexPage'
-import PreviewIndexPage from 'components/PreviewIndexPage'
-import { readToken } from 'lib/sanity.api'
-import { getAllPosts, getClient, getSettings } from 'lib/sanity.client'
-import { Post, Settings } from 'lib/sanity.queries'
-import { GetStaticProps } from 'next'
-import type { SharedPageProps } from 'pages/_app'
+import HomePage from 'app/home/page'
+import NotFound from 'app/notfound/page'
+import Relax from 'app/relax/page'
+import { useRouter } from 'next/router'
+import { JSX } from 'react'
 
-interface PageProps extends SharedPageProps {
-  posts: Post[]
-  settings: Settings
-}
+import Blog, { BlogProps } from './blog'
 
-interface Query {
-  [key: string]: string
-}
+const IndexPage: React.FC<BlogProps> = (props) => {
+  const router = useRouter()
 
-export default function Page(props: PageProps) {
-  const { posts, settings, draftMode } = props
+  let pageComponent: JSX.Element
 
-  if (draftMode) {
-    return <PreviewIndexPage posts={posts} settings={settings} />
+  switch (router.pathname) {
+    case '/blog':
+      pageComponent = <Blog {...props} />
+      break
+    case '/relax':
+      pageComponent = <Relax />
+      break
+    case '/':
+      pageComponent = <HomePage />
+      break
+    default:
+      pageComponent = <NotFound />
   }
 
-  return <IndexPage posts={posts} settings={settings} />
+  return <>{pageComponent}</>
 }
 
-export const getStaticProps: GetStaticProps<PageProps, Query> = async (ctx) => {
-  const { draftMode = false } = ctx
-  const client = getClient(draftMode ? { token: readToken } : undefined)
-
-  const [settings, posts = []] = await Promise.all([
-    getSettings(client),
-    getAllPosts(client),
-  ])
-
-  return {
-    props: {
-      posts,
-      settings,
-      draftMode,
-      token: draftMode ? readToken : '',
-    },
-  }
-}
+export default IndexPage
