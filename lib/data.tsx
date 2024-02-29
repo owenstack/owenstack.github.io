@@ -1,47 +1,33 @@
 import adobexdicon from "assets/icons/adobexdicon.svg";
-import apiicon from "assets/icons/apiicon.svg";
-import axiosicon from "assets/icons/axiosicon.svg";
 import blogicon from 'assets/icons/blogicon.svg'
 import bunicon from 'assets/icons/bunicon.svg'
 import canvaicon from "assets/icons/canvaicon.svg";
 import chessicon from 'assets/icons/chessicon.svg'
 import cssicon from "assets/icons/cssicon.svg";
 import expressicon from "assets/icons/expressicon.svg";
-import expressiconwhite from "assets/icons/expressiconwhite.svg";
 import figmaicon from "assets/icons/figmaicon.svg";
 import ghosticon from 'assets/icons/ghosticon.svg'
 import googlecloudicon from 'assets/icons/googlecloudicon.svg'
-import hardwareicon from "assets/icons/hardware-icon.svg";
 import htmlicon from "assets/icons/htmlicon.svg";
 import ideaicon from 'assets/icons/ideaicon.svg'
 import javascripticon from "assets/icons/javascripticon.svg";
-import jwticon from "assets/icons/jwticon.svg";
 import languageicon from 'assets/icons/languageicon.svg'
 import mongodbicon from "assets/icons/mongoicon.svg";
-import netlifyicon from "assets/icons/netlifyicon.svg";
 import nextjsicon from "assets/icons/nextjsicon.svg";
-import nextjsiconwhite from "assets/icons/nextjsiconwhite.svg";
 import nodejsicon from "assets/icons/nodejsicon.svg";
 import reacticon from "assets/icons/reacticon.svg";
 import relaxicon from 'assets/icons/relaxicon.svg'
-import rendericon from "assets/icons/rendericon.svg";
 import sanityicon from 'assets/icons/sanityicon.svg'
-import shopifyicon from "assets/icons/shopifyicon.svg";
-import spotifyicon from "assets/icons/spotifyicon.svg";
 import strapiicon from 'assets/icons/strapiicon.svg'
 import supabaseicon from 'assets/icons/supabaseicon.svg'
 import tailwindcssicon from "assets/icons/tailwindicon.svg";
-import travelicon from "assets/icons/travel-icon.svg";
-import trelloicon from "assets/icons/trelloicon.svg";
 import typescripticon from "assets/icons/typescripticon.svg";
 import viteicon from 'assets/icons/viteicon.svg'
-import webflowicon from "assets/icons/webflowicon.svg";
-import wordpressicon from "assets/icons/wordpressicon.svg";
 import headshot from 'assets/img/me2.webp'
 import Imprint from 'components/Imprint'
 import Privacy from 'components/Privacy'
-import { FiGithub, FiLink, FiLinkedin, FiMail } from "react-icons/fi";
-import { GoBookmark, GoHome, GoMail, GoPerson, GoProject,GoStack, GoUnlink, GoX } from "react-icons/go";
+import { FiGithub, FiLinkedin, FiMail,FiTwitter } from "react-icons/fi";
+import { GoBookmark, GoHome, GoUnlink } from "react-icons/go";
 
 export const headerIntroData = {
   title: {
@@ -60,7 +46,7 @@ export const headerIntroData = {
         fr: 'Se détendre',
         en: 'Relax',
       },
-      icon: relaxicon,
+      icon: 'btn-primary',
       color: relaxicon,
     },
     {
@@ -69,18 +55,11 @@ export const headerIntroData = {
         fr: 'Journal',
         en: 'Blog',
       },
-      icon: blogicon,
+      icon: 'btn-secondary',
       color: blogicon,
     },
   ],
   profilepicture: headshot,
-} as const
-
-export const liveTickerData = {
-  content: {
-    fr: 'Plus de projet a Github',
-    en: 'More Projects on Github',
-  },
 } as const
 
 export const skillsDataWeb = [
@@ -282,7 +261,7 @@ export const sideBarLeftSocials = [
   },
   {
     link: 'https://twitter.com/oweneefobi',
-    icon: GoX,
+    icon: FiTwitter,
     altimagename: 'twitter',
   },
 ] as const

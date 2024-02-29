@@ -1,20 +1,20 @@
+'use client'
+import AboutMe from 'components/AboutMe'
+import BannerQuote from 'components/BannerQuote'
+import Contact from 'components/Contact'
 import Divider from 'components/Divider'
 import Footer from 'components/Footer'
+import HeaderIntro from 'components/HeaderIntro'
+import RadialGradient from 'components/RadialGradient'
 import { ScrollProgress } from 'components/ScrollProgress'
+import SiteBarLeft from 'components/SideBarLeft'
+import SiteBarRight from 'components/SideBarRight'
+import TechStack from 'components/TechStack'
 import ThemeSwitch from 'components/theme-switch'
 import { useTheme } from 'context/theme-context'
-import React, { lazy, Suspense } from 'react'
+import React, { Suspense } from 'react'
 
 import Layout from './layout'
-
-const LazyBannerQuote = lazy(() => import('components/BannerQuote'))
-const LazySiteBarRight = lazy(() => import('components/SideBarRight'))
-const LazySiteBarLeft = lazy(() => import('components/SideBarLeft'))
-const LazyTechStack = lazy(() => import('components/TechStack'))
-const LazyAboutMe = lazy(() => import('components/AboutMe'))
-const LazyContact = lazy(() => import('components/Contact'))
-const LazyHeaderIntro = lazy(() => import('components/HeaderIntro'))
-const LazyRadialGradient = lazy(() => import('components/RadialGradient'))
 
 const Home: React.FC = () => {
   const { theme } = useTheme()
@@ -30,15 +30,15 @@ const Home: React.FC = () => {
             height={10}
             smoothness={true}
           />
-          <Suspense fallback={<div>Loading...</div>}>
-            <LazySiteBarLeft />
-            <LazyHeaderIntro />
-            <LazySiteBarRight />
+          <Suspense>
+            <SiteBarLeft />
+            <HeaderIntro />
+            <SiteBarRight />
           </Suspense>
         </header>
         <main className="relative">
-          <Suspense fallback={<div>Loading...</div>}>
-            <LazyBannerQuote
+          <Suspense>
+            <BannerQuote
               style={'withBG'}
               quoteIndex={0}
               containerType="quote"
@@ -46,21 +46,19 @@ const Home: React.FC = () => {
             <Divider
               thickness="0.25rem"
               direction="outer-right-to-inner-left"
-              color="lightblue"
+              color="base-200"
               height="small"
               dividerStyle="solid"
             />
-
-            <LazyTechStack />
+            <TechStack />
             <Divider
               thickness="0.25rem"
               direction="inner-right-to-middle"
-              color="lightblue"
+              color="base-200"
               height="middle"
               dividerStyle="solid"
             />
-
-            <LazyBannerQuote
+            <BannerQuote
               style={'noBG'}
               quoteIndex={1}
               containerType="statement"
@@ -68,12 +66,12 @@ const Home: React.FC = () => {
             <Divider
               thickness="0.25rem"
               direction="middle"
-              color="lightblue"
+              color="base-200"
               height="extraLarge"
               dividerStyle="solid"
             />
             <div className="relative -mb-24 pb-32 -mt-10">
-              <LazyRadialGradient
+              <RadialGradient
                 opacity={theme === 'light' ? 'opacity-30' : 'opacity-30'}
                 scale="scale-y-100"
                 position="-top-24"
@@ -81,21 +79,19 @@ const Home: React.FC = () => {
               <Divider
                 thickness="0.25rem"
                 direction="middle-to-inner-left"
-                color="lightblue"
+                color="base-200"
                 height="middle"
                 dividerStyle="solid"
               />
-
-              <LazyAboutMe />
+              <AboutMe />
               <Divider
                 thickness="0.25rem"
                 direction="inner-left-to-middle"
-                color="lightblue"
+                color="base-200"
                 height="middle"
                 dividerStyle="solid"
               />
-
-              <LazyContact />
+              <Contact />
             </div>
           </Suspense>
         </main>

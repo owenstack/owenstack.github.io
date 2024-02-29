@@ -2,7 +2,6 @@
 module.exports = {
   content: [
     './components/**/*.{js,ts,jsx,tsx}',
-    './intro-template/**/*.{js,ts,jsx,tsx}',
     './pages/**/*.{js,ts,jsx,tsx}',
     './plugins/**/*.{js,ts,jsx,tsx}',
   ],
@@ -11,6 +10,14 @@ module.exports = {
       {
         cmyk: {
           ...require('daisyui/src/theming/themes')['cmyk'],
+          primary: "#0230FF",
+          secondary: "#494454",
+          accent: "#AEA8BA",
+          neutral: "#FF724C",
+          info: "#58FBDA",
+          success: "#00AD76",
+          warning: "#F9F871",
+          error: "#FF0019",
           black: '#000000',
           white: '#ffffff',
           icewhite: '#ebebeb',
@@ -22,6 +29,14 @@ module.exports = {
         },
         night: {
           ...require('daisyui/src/theming/themes')['night'],
+          primary: "#0F111A",
+          secondary: "#302F3D",
+          accent: "#574F62",
+          neutral: "#00A189",
+          info: "#20546C",
+          success: "#5E513B",
+          warning: "#E7BAD2",
+          error: "#513437",
           black: '#000000',
           white: '#ffffff',
           icewhite: '#ebebeb',

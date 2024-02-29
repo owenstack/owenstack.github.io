@@ -1,24 +1,24 @@
 'use client'
-import { sideBarLeftSocials } from "lib/data";
+import { sideBarLeftSocials } from 'lib/data'
 import Image from 'next/image'
-import Link from 'next/link';
-import React from "react";
+import Link from 'next/link'
+import React from 'react'
 
 interface SocialLink {
-  link: string;
-  icon: string | React.FC<{ className: string }>;
-  iconcolor?: string;
-  altimagename: any;
+  link: string
+  icon: string | React.FC<{ className: string }>
+  iconcolor?: string
+  altimagename: any
 }
 
 const SiteBarLeft: React.FC = () => {
   return (
     <div
-      className="absolute flex items-center flex-col justify-center top-0 left-0 ml-8 max-lg:h-[10%] max-lg:ml-4"
+      className="absolute flex items-center flex-col justify-center top-0 left-0 ml-8 lg:h-[10%] lg:ml-4"
       id="home"
     >
       <div className="flex items-center justify-center flex-col">
-        <div className="w-[0.25rem] h-[40vh] bg-[--lightblue]"></div>
+        <div className="w-[0.25rem] h-[40vh] bg-[--base-200]"></div>
       </div>
       <div className="flex flex-col gap-4 mt-4">
         {sideBarLeftSocials.map((social: SocialLink, index: number) => (
@@ -29,12 +29,12 @@ const SiteBarLeft: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-current={
-              social.altimagename === "true"
+              social.altimagename === 'true'
                 ? social.altimagename
-                : social.altimagename + " button"
+                : social.altimagename + ' button'
             }
           >
-            {typeof social.icon === "function" ? (
+            {typeof social.icon === 'function' ? (
               <social.icon className={`stroke-orange`} />
             ) : (
               <Image
@@ -47,7 +47,7 @@ const SiteBarLeft: React.FC = () => {
         ))}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default SiteBarLeft;
+export default SiteBarLeft
