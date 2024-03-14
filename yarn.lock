@@ -2916,6 +2916,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"clsx@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "clsx@npm:2.1.0"
+  checksum: 10c0/c09c00ad14f638366ca814097e6cab533dfa1972a358da5b557be487168acbb25b4c1395e89ffa842a8a61ba87a462d2b4885bc9d4f8410b598f3cb339599cdb
+  languageName: node
+  linkType: hard
+
 "codemirror@npm:^6.0.0":
   version: 6.0.1
   resolution: "codemirror@npm:6.0.1"
@@ -6498,6 +6505,7 @@ __metadata:
     "@vercel/og": "npm:0.6.2"
     autoprefixer: "npm:10.4.17"
     classnames: "npm:2.5.1"
+    clsx: "npm:^2.1.0"
     daisyui: "npm:^4.7.2"
     date-fns: "npm:2.30.0"
     eslint: "npm:8.56.0"
@@ -6520,6 +6528,7 @@ __metadata:
     swr: "npm:2.2.4"
     tailwindcss: "npm:3.4.1"
     typescript: "npm:5.3.3"
+    typewriter-effect: "npm:^2.21.0"
   languageName: unknown
   linkType: soft
 
@@ -9149,6 +9158,19 @@ __metadata:
     tsc: bin/tsc
     tsserver: bin/tsserver
   checksum: 10c0/1d0a5f4ce496c42caa9a30e659c467c5686eae15d54b027ee7866744952547f1be1262f2d40de911618c242b510029d51d43ff605dba8fb740ec85ca2d3f9500
+  languageName: node
+  linkType: hard
+
+"typewriter-effect@npm:^2.21.0":
+  version: 2.21.0
+  resolution: "typewriter-effect@npm:2.21.0"
+  dependencies:
+    prop-types: "npm:^15.8.1"
+    raf: "npm:^3.4.1"
+  peerDependencies:
+    react: ^17.x || ^18.x
+    react-dom: ^17.x || ^18.x
+  checksum: 10c0/e3200599f1de2b06933960ab291f4949194a629b44b73e5d88b591119f90cb32a74f2edc9ebaea823c418babc2b62c41e223ac600a29ceaee223d1fe4cfe4342
   languageName: node
   linkType: hard
 
