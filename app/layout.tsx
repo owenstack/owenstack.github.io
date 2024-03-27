@@ -1,4 +1,7 @@
 import 'tailwindcss/tailwind.css'
+import {Macondo} from 'next/font/google'
+
+const body = Macondo({weight: '400',subsets: ['latin']})
 
 export default function RootLayout({
   children,
@@ -6,8 +9,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html data-theme='night' lang="en">
+      <body className={body.className}>{children}</body>
     </html>
   )
 }
