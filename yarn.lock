@@ -486,6 +486,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@emailjs/browser@npm:^4.1.0":
+  version: 4.1.0
+  resolution: "@emailjs/browser@npm:4.1.0"
+  checksum: 10c0/314ab62a8f2d8d6b428a0624c4034c7ddee70ed245d0ea843e69ec2db93c994cd138018d42648e32f8c961505e9b2f36d392a0325054faf734ebb416960edea0
+  languageName: node
+  linkType: hard
+
 "@emotion/is-prop-valid@npm:1.2.1":
   version: 1.2.1
   resolution: "@emotion/is-prop-valid@npm:1.2.1"
@@ -1071,6 +1078,24 @@ __metadata:
   dependencies:
     "@lezer/common": "npm:^1.0.0"
   checksum: 10c0/1e3af297cc142bb6676cb3c4e1bd310da2e93b53273cf745dc85d839a08e1d3cbbd67e0fc0322a480cf25ee215fefe967c53bc2af3ddf5d9b1bf267081dfa164
+  languageName: node
+  linkType: hard
+
+"@motionone/types@npm:^10.17.0":
+  version: 10.17.0
+  resolution: "@motionone/types@npm:10.17.0"
+  checksum: 10c0/9c91d887b368c93e860c1ff4b245d60d33966ec5bd2525ce91c4e2904c223f79333013fe06140feeab23f27ad9e8546a151e8357c5dc5218c5b658486bac3f82
+  languageName: node
+  linkType: hard
+
+"@motionone/utils@npm:^10.17.0":
+  version: 10.17.0
+  resolution: "@motionone/utils@npm:10.17.0"
+  dependencies:
+    "@motionone/types": "npm:^10.17.0"
+    hey-listen: "npm:^1.0.8"
+    tslib: "npm:^2.3.1"
+  checksum: 10c0/a90dc772245fa379d522d752dcbe80b02b1fcb17da6a3f3ebc725ac0e99b7847d39f1f4a29f10cbf5e8b6157766191ba03e96c75b0fa8378e3a1c4cc8cad728a
   languageName: node
   linkType: hard
 
@@ -1955,6 +1980,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/prismjs@npm:^1.26.0":
+  version: 1.26.3
+  resolution: "@types/prismjs@npm:1.26.3"
+  checksum: 10c0/3e8a64bcf0ab5f9a47ec2590938c5a8a20ac849b4949a95ed96e73e64cb890fc56e9c9b724286914717458267b28405f965709e1b9f80db5d68817a7ce5a18a9
+  languageName: node
+  linkType: hard
+
 "@types/prop-types@npm:*":
   version: 15.7.11
   resolution: "@types/prop-types@npm:15.7.11"
@@ -2593,6 +2625,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"axios@npm:^1.6.7":
+  version: 1.6.7
+  resolution: "axios@npm:1.6.7"
+  dependencies:
+    follow-redirects: "npm:^1.15.4"
+    form-data: "npm:^4.0.0"
+    proxy-from-env: "npm:^1.1.0"
+  checksum: 10c0/131bf8e62eee48ca4bd84e6101f211961bf6a21a33b95e5dfb3983d5a2fe50d9fffde0b57668d7ce6f65063d3dc10f2212cbcb554f75cfca99da1c73b210358d
+  languageName: node
+  linkType: hard
+
 "axobject-query@npm:^3.2.1":
   version: 3.2.1
   resolution: "axobject-query@npm:3.2.1"
@@ -2884,7 +2927,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"classnames@npm:2.5.1, classnames@npm:^2.2.5":
+"classnames@npm:2.5.1, classnames@npm:^2.2.5, classnames@npm:^2.3.0":
   version: 2.5.1
   resolution: "classnames@npm:2.5.1"
   checksum: 10c0/afff4f77e62cea2d79c39962980bf316bacb0d7c49e13a21adaadb9221e1c6b9d3cdb829d8bb1b23c406f4e740507f37e1dcf506f7e3b7113d17c5bab787aa69
@@ -3498,6 +3541,13 @@ __metadata:
   dependencies:
     is-obj: "npm:^2.0.0"
   checksum: 10c0/93f0d343ef87fe8869320e62f2459f7e70f49c6098d948cc47e060f4a3f827d0ad61e83cb82f2bd90cd5b9571b8d334289978a43c0f98fea4f0e99ee8faa0599
+  languageName: node
+  linkType: hard
+
+"dotenv@npm:^16.4.5":
+  version: 16.4.5
+  resolution: "dotenv@npm:16.4.5"
+  checksum: 10c0/48d92870076832af0418b13acd6e5a5a3e83bb00df690d9812e94b24aff62b88ade955ac99a05501305b8dc8f1b0ee7638b18493deb6fe93d680e5220936292f
   languageName: node
   linkType: hard
 
@@ -4489,7 +4539,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"framer-motion@npm:^11.0.3, framer-motion@npm:^11.0.5":
+"framer-motion@npm:^11.0.3, framer-motion@npm:^11.0.5, framer-motion@npm:^11.0.6":
   version: 11.0.6
   resolution: "framer-motion@npm:11.0.6"
   dependencies:
@@ -4896,6 +4946,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"gsap@npm:^3.12.5":
+  version: 3.12.5
+  resolution: "gsap@npm:3.12.5"
+  checksum: 10c0/cb38e89bd577fc18c9cf77e4aeb83617603b1e0fa768fe8ca1acd836fd852936722e186a88c9cf6ece42e53407edd45324be2bfe35a41f424c5f2c2b33fd1a98
+  languageName: node
+  linkType: hard
+
 "gunzip-maybe@npm:^1.4.1":
   version: 1.4.2
   resolution: "gunzip-maybe@npm:1.4.2"
@@ -5005,6 +5062,13 @@ __metadata:
   version: 4.3.0
   resolution: "hex-rgb@npm:4.3.0"
   checksum: 10c0/ce2c2ff260d9e0686bead74e3318c1684d8a2da856da30ed90535442f705fb4f5cd93ffe70274e2534a7319a99cda6a6617f23d4f163b72867f406e25ea30cb4
+  languageName: node
+  linkType: hard
+
+"hey-listen@npm:^1.0.8":
+  version: 1.0.8
+  resolution: "hey-listen@npm:1.0.8"
+  checksum: 10c0/38db3028b4756f3d536c0f6a92da53bad577ab649b06dddfd0a4d953f9a46bbc6a7f693c8c5b466a538d6d23dbc469260c848427f0de14198a2bbecbac37b39e
   languageName: node
   linkType: hard
 
@@ -6491,7 +6555,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "nextjs-blog-cms-sanity-v3@workspace:."
   dependencies:
+    "@emailjs/browser": "npm:^4.1.0"
     "@iconify/react": "npm:^4.1.1"
+    "@motionone/utils": "npm:^10.17.0"
     "@portabletext/react": "npm:3.0.11"
     "@sanity/client": "npm:6.12.3"
     "@sanity/image-url": "npm:1.0.2"
@@ -6504,13 +6570,17 @@ __metadata:
     "@types/styled-components": "npm:5.1.34"
     "@vercel/og": "npm:0.6.2"
     autoprefixer: "npm:10.4.17"
+    axios: "npm:^1.6.7"
     classnames: "npm:2.5.1"
     clsx: "npm:^2.1.0"
     daisyui: "npm:^4.7.2"
     date-fns: "npm:2.30.0"
+    dotenv: "npm:^16.4.5"
     eslint: "npm:8.56.0"
     eslint-config-next: "npm:14.1.0"
     eslint-plugin-simple-import-sort: "npm:10.0.0"
+    framer-motion: "npm:^11.0.6"
+    gsap: "npm:^3.12.5"
     intl-segmenter-polyfill: "npm:0.4.4"
     next: "npm:14.1.0"
     next-sanity: "npm:7.0.17"
@@ -6519,12 +6589,20 @@ __metadata:
     prettier: "npm:3.2.4"
     prettier-plugin-packagejson: "npm:2.4.10"
     prettier-plugin-tailwindcss: "npm:0.5.11"
+    prism-react-renderer: "npm:^2.3.1"
     react: "npm:18.2.0"
     react-dom: "npm:18.2.0"
+    react-icons: "npm:^5.0.1"
+    react-intersection-observer: "npm:^9.8.1"
+    react-toastify: "npm:^10.0.4"
+    react-tooltip: "npm:^5.26.3"
+    react-use-gesture: "npm:^9.1.3"
+    reactjs-popup: "npm:^2.0.6"
     sanity: "npm:3.27.1"
     sanity-plugin-asset-source-unsplash: "npm:1.1.2"
     sanity-plugin-iframe-pane: "npm:3.1.3"
     styled-components: "npm:6.1.8"
+    swiper: "npm:^11.0.7"
     swr: "npm:2.2.4"
     tailwindcss: "npm:3.4.1"
     typescript: "npm:5.3.3"
@@ -7274,6 +7352,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"prism-react-renderer@npm:^2.3.1":
+  version: 2.3.1
+  resolution: "prism-react-renderer@npm:2.3.1"
+  dependencies:
+    "@types/prismjs": "npm:^1.26.0"
+    clsx: "npm:^2.0.0"
+  peerDependencies:
+    react: ">=16.0.0"
+  checksum: 10c0/566932127ca18049a651aa038a8f8c7c1ca15950d21b659c2ce71fd95bd03bef2b5d40c489e7aa3453eaf15d984deef542a609d7842e423e6a13427dd90bd371
+  languageName: node
+  linkType: hard
+
 "prismjs@npm:~1.27.0":
   version: 1.27.0
   resolution: "prismjs@npm:1.27.0"
@@ -7339,6 +7429,13 @@ __metadata:
   dependencies:
     xtend: "npm:^4.0.0"
   checksum: 10c0/d54b77c31dc13bb6819559080b2c67d37d94be7dc271f404f139a16a57aa96fcc0b3ad806d4a5baef9e031744853e4afe3df2e37275aacb1f78079bbb652c5af
+  languageName: node
+  linkType: hard
+
+"proxy-from-env@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "proxy-from-env@npm:1.1.0"
+  checksum: 10c0/fe7dd8b1bdbbbea18d1459107729c3e4a2243ca870d26d34c2c1bcd3e4425b7bcc5112362df2d93cc7fb9746f6142b5e272fd1cc5c86ddf8580175186f6ad42b
   languageName: node
   linkType: hard
 
@@ -7497,6 +7594,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-icons@npm:^5.0.1":
+  version: 5.0.1
+  resolution: "react-icons@npm:5.0.1"
+  peerDependencies:
+    react: "*"
+  checksum: 10c0/717022d93a3b2b30082f86fbb3c725a94a603b3fa1c611533439cc886f691a13b1833c30446d257a177667779239eac57411fa7516d8a4787bd735e965c9f63d
+  languageName: node
+  linkType: hard
+
 "react-infinite-scroll-component@npm:6.1.0":
   version: 6.1.0
   resolution: "react-infinite-scroll-component@npm:6.1.0"
@@ -7505,6 +7611,19 @@ __metadata:
   peerDependencies:
     react: ">=16.0.0"
   checksum: 10c0/8de02f178ae861880dddbd0c882dc70b55e21737b87fe428140d81a2c5d13c5eeba8a4fc260b1e86e4c556fdea333d6babaed55a9e5987a42b181b2d92f69cd8
+  languageName: node
+  linkType: hard
+
+"react-intersection-observer@npm:^9.8.1":
+  version: 9.8.1
+  resolution: "react-intersection-observer@npm:9.8.1"
+  peerDependencies:
+    react: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0
+    react-dom: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0
+  peerDependenciesMeta:
+    react-dom:
+      optional: true
+  checksum: 10c0/bfa26883e88261ef4b3e3cda7bde187c3156727a8677bc43dbfe21eae2c02faa3cc6c577698a7fc6b5f74e4cb0b896552d5a9ade62c2c6d13441538b50a04e50
   languageName: node
   linkType: hard
 
@@ -7581,12 +7700,56 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-toastify@npm:^10.0.4":
+  version: 10.0.4
+  resolution: "react-toastify@npm:10.0.4"
+  dependencies:
+    clsx: "npm:^2.1.0"
+  peerDependencies:
+    react: ">=16"
+    react-dom: ">=16"
+  checksum: 10c0/3d31edf81e8b394fd0085615fd7ba9fb9546c7cdae56e5334df67b58d65450c73af14a8fc163f19ceed03cfee7a344d1af1489422536f52c9516ca45e9b61a37
+  languageName: node
+  linkType: hard
+
+"react-tooltip@npm:^5.26.3":
+  version: 5.26.3
+  resolution: "react-tooltip@npm:5.26.3"
+  dependencies:
+    "@floating-ui/dom": "npm:^1.6.1"
+    classnames: "npm:^2.3.0"
+  peerDependencies:
+    react: ">=16.14.0"
+    react-dom: ">=16.14.0"
+  checksum: 10c0/fcce843ebfda0a74ddaf90b7d322879c9070bd180e490ae4634ff02052b1cd39158a0af3a27621a9ffe62a1a8ad246633908a1d214998aea0403ec7aeca874fb
+  languageName: node
+  linkType: hard
+
+"react-use-gesture@npm:^9.1.3":
+  version: 9.1.3
+  resolution: "react-use-gesture@npm:9.1.3"
+  peerDependencies:
+    react: ">= 16.8.0"
+  checksum: 10c0/36e8991811c9bf97018cda24b84d9010143fbb8c43eec1089580ef69450f4004a60969b662b489f5416a5c45c516a5d718f20ae46b3fbf0c49f7e34320021246
+  languageName: node
+  linkType: hard
+
 "react@npm:18.2.0, react@npm:^18.2.0":
   version: 18.2.0
   resolution: "react@npm:18.2.0"
   dependencies:
     loose-envify: "npm:^1.1.0"
   checksum: 10c0/b562d9b569b0cb315e44b48099f7712283d93df36b19a39a67c254c6686479d3980b7f013dc931f4a5a3ae7645eae6386b4aa5eea933baa54ecd0f9acb0902b8
+  languageName: node
+  linkType: hard
+
+"reactjs-popup@npm:^2.0.6":
+  version: 2.0.6
+  resolution: "reactjs-popup@npm:2.0.6"
+  peerDependencies:
+    react: ">=16"
+    react-dom: ">=16"
+  checksum: 10c0/3f51ff3872a3a338027717cb8c3d51e25ef314f0c5475f105314acb6ef208f13ddebde8e8a466cf1cdc2919e874dc0b76d23934d5d6a0628492eae109a76f683
   languageName: node
   linkType: hard
 
@@ -8747,6 +8910,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"swiper@npm:^11.0.7":
+  version: 11.0.7
+  resolution: "swiper@npm:11.0.7"
+  checksum: 10c0/d27b8c3b5deccde730317c2fe868350fad039e9776c8c6dfd11a89d9e732a66c1292292ca635141a7e0bbb363fcac1291c9fd716bf7a8e3b85d320e58ff94eba
+  languageName: node
+  linkType: hard
+
 "swr@npm:2.2.4":
   version: 2.2.4
   resolution: "swr@npm:2.2.4"
@@ -9018,7 +9188,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tslib@npm:^2.0.0, tslib@npm:^2.0.3, tslib@npm:^2.1.0, tslib@npm:^2.4.0, tslib@npm:^2.6.2":
+"tslib@npm:^2.0.0, tslib@npm:^2.0.3, tslib@npm:^2.1.0, tslib@npm:^2.3.1, tslib@npm:^2.4.0, tslib@npm:^2.6.2":
   version: 2.6.2
   resolution: "tslib@npm:2.6.2"
   checksum: 10c0/e03a8a4271152c8b26604ed45535954c0a45296e32445b4b87f8a5abdb2421f40b59b4ca437c4346af0f28179780d604094eb64546bee2019d903d01c6c19bdb
@@ -9459,6 +9629,13 @@ __metadata:
   dependencies:
     xml-name-validator: "npm:^5.0.0"
   checksum: 10c0/8712774c1aeb62dec22928bf1cdfd11426c2c9383a1a63f2bcae18db87ca574165a0fbe96b312b73652149167ac6c7f4cf5409f2eb101d9c805efe0e4bae798b
+  languageName: node
+  linkType: hard
+
+"web-vitals@npm:^3.5.2":
+  version: 3.5.2
+  resolution: "web-vitals@npm:3.5.2"
+  checksum: 10c0/662b385d6e96a18677cf8726454b65f3aecfdca330df72a82f73f293a5708ba9d191964649f8d363a1e64062a826a99805ade8c573a6492b91e02275b6860308
   languageName: node
   linkType: hard
 
