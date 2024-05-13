@@ -1,5 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  images: {
+    remotePatterns: [{hostname: "*.unsplash.com"}],
+  },
   async rewrites() {
     return [
       {
@@ -8,7 +11,7 @@ const nextConfig = {
       },
       {
         source: "/blog/:path*",
-        destination: "https://starter-kit-brown-two.vercel.app/blog/:path*", 
+        destination: "https://starter-kit-brown-two.vercel.app/blog/:path*",
       },
     ];
   },
