@@ -1,12 +1,13 @@
 "use client";
 
-import {Button} from "./ui/button";
-import {toast} from "sonner";
-import {useLanguage} from "@/lib/providers";
-import {contactSection, formDetails, buttonLabels} from "@/lib/data";
-import {Label} from "./ui/label";
-import {Input} from "./ui/input";
-import {Textarea} from "./ui/textarea";
+import { Button } from "./ui/button";
+import { toast } from "sonner";
+import { useTransition } from "react";
+import { useLanguage } from "@/lib/providers";
+import { contactSection, formDetails, buttonLabels } from "@/lib/data";
+import { Label } from "./ui/label";
+import { Input } from "./ui/input";
+import { Textarea } from "./ui/textarea";
 import Link from "next/link";
 import Github from "@/assets/github";
 import Instagram from "@/assets/instagram";
@@ -16,49 +17,56 @@ import WhatsApp from "@/assets/whatsapp";
 import X from "@/assets/x";
 
 export default function ContactSection() {
-  const {language} = useLanguage();
-  const apiBaseUrl = "https://owenstack-mail.onrender.com/submit-form";
+  const { language } = useLanguage();
+  const [pending, startTransition] = useTransition();
 
-  async function handleSubmit(formData: FormData) {
-    const response = await fetch(apiBaseUrl, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: formData,
+  async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+
+    const form = event.currentTarget;
+    const formData = new FormData(form);
+
+    startTransition(async () => {
+      await fetch("/api/contact", {
+        method: "POST",
+        body: formData,
+      }).then((response) => {
+        if (!response.ok) {
+          if (!response.ok) {
+            toast(
+              `${
+                language === "EN"
+                  ? formDetails.error.title.en
+                  : formDetails.error.title.fr
+              }`,
+              {
+                description: `${
+                  language === "EN"
+                    ? formDetails.error.description.en
+                    : formDetails.error.description.fr
+                }`,
+              }
+            );
+          } else {
+            toast(
+              `${
+                language === "EN"
+                  ? formDetails.success.title.en
+                  : formDetails.success.title.fr
+              }`,
+              {
+                description: `${
+                  language === "EN"
+                    ? formDetails.success.description.en
+                    : formDetails.success.description.fr
+                }`,
+              }
+            );
+            form.reset();
+          }
+        }
+      });
     });
-
-    if (!response.ok) {
-      toast(
-        `${
-          language === "EN"
-            ? formDetails.error.title.en
-            : formDetails.error.title.fr
-        }`,
-        {
-          description: `${
-            language === "EN"
-              ? formDetails.error.description.en
-              : formDetails.error.description.fr
-          }`,
-        }
-      );
-    } else {
-      toast(
-        `${
-          language === "EN"
-            ? formDetails.success.title.en
-            : formDetails.success.title.fr
-        }`,
-        {
-          description: `${
-            language === "EN"
-              ? formDetails.success.description.en
-              : formDetails.success.description.fr
-          }`,
-        }
-      );
-    }
   }
 
   return (
@@ -83,14 +91,32 @@ export default function ContactSection() {
             </p>
           </div>
           <div className="w-full max-w-md">
-            <form action={handleSubmit} className="space-y-4">
+            <form onSubmit={handleSubmit} className="space-y-4">
               <div className="space-y-2">
                 <Label htmlFor="name">
                   {language === "EN"
                     ? formDetails.name.en
                     : formDetails.name.fr}
                 </Label>
-                <Input id="name" placeholder="Lee Robinson" required />
+                <Input
+                  id="name"
+                  name="name"
+                  placeholder="Lee Robinson"
+                  required
+                />
+              </div>
+              <div className="space-y-2">
+                <Label htmlFor="name">
+                  {language === "EN"
+                    ? formDetails.email.en
+                    : formDetails.email.fr}
+                </Label>
+                <Input
+                  id="email"
+                  name="email"
+                  placeholder="leerob@vercel.com"
+                  required
+                />
               </div>
               <div className="space-y-2">
                 <Label htmlFor="message">
@@ -98,12 +124,23 @@ export default function ContactSection() {
                     ? formDetails.message.en
                     : formDetails.message.fr}
                 </Label>
-                <Textarea id="message" placeholder="Your message..." required />
+                <Textarea
+                  id="message"
+                  name="message"
+                  placeholder="Your message..."
+                  required
+                />
               </div>
-              <Button className="w-full" type="submit">
-                {language === "EN"
-                  ? buttonLabels.message.en
-                  : buttonLabels.message.fr}
+              <Button className="w-full" type="submit" disabled={pending}>
+                {pending ? (
+                  <div className="flex items-center justify-center h-5 w-5 animate-spin rounded-full border-2 border-current border-r-transparent mr-3" />
+                ) : (
+                  <span>
+                    {language === "EN"
+                      ? buttonLabels.message.en
+                      : buttonLabels.message.fr}
+                  </span>
+                )}
               </Button>
             </form>
             <br />

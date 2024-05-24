@@ -2,12 +2,12 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import {Button} from "./ui/button";
-import {heroSection, buttonLabels} from "@/lib/data";
-import {useLanguage} from "@/lib/providers";
+import { Button } from "./ui/button";
+import { heroSection, buttonLabels } from "@/lib/data";
+import { useLanguage } from "@/lib/providers";
 
 export default function HeroSection() {
-  const {language} = useLanguage();
+  const { language } = useLanguage();
 
   return (
     <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48">
@@ -20,6 +20,7 @@ export default function HeroSection() {
               className="mx-auto aspect-sqaure overflow-hidden rounded-xl object-cover lg;mx-0"
               height={600}
               width={600}
+              priority
             />
           </div>
           <div>
