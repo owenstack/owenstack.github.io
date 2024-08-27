@@ -1,17 +1,13 @@
 import type {Metadata} from "next";
-import {Lato as FontSans} from "next/font/google";
 import {Analytics} from "@vercel/analytics/react";
 import {LanguageContextProvider, ThemeProvider} from "@/lib/providers";
 import {Toaster} from "@/components/ui/sonner";
 import Header from "@/components/Header";
 import {cn} from "@/lib/utils";
 import "./globals.css";
+import localFont from 'next/font/local'
 
-const fontSans = FontSans({
-  subsets: ["latin"],
-  weight: ["400"],
-  variable: "--font-sans",
-});
+const body = localFont({src: '../assets/fonts/body.ttf'})
 
 export const metadata: Metadata = {
   title: {
@@ -37,7 +33,7 @@ export default function RootLayout({
         <body
           className={cn(
             "min-h-screen bg-background font-sans antialiased",
-            fontSans.variable
+            body.className
           )}
         >
           <ThemeProvider
