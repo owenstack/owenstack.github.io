@@ -1,19 +1,12 @@
 "use client";
 
-import { Button } from "./ui/button";
 import { useLanguage } from "@/lib/providers";
 import { blogSection } from "@/lib/data";
-import {
-	Card,
-	CardHeader,
-	CardTitle,
-	CardDescription,
-	CardFooter,
-} from "./ui/card";
-import Link from "next/link";
 import { header } from "@/lib/constants";
+import TopPosts from "./TopPosts";
+import type { OstDocument } from "outstatic";
 
-export default function BlogSection() {
+export default function BlogSection({ posts }: { posts: OstDocument[] }) {
 	const { language } = useLanguage();
 
 	return (
@@ -21,11 +14,7 @@ export default function BlogSection() {
 			<div className="container px-4 md:px-6">
 				<div className="flex flex-col items-center justify-center space-y-4 text-center">
 					<div className="space-y-2">
-						<div
-							className={
-								"inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm dark:bg-gray-700"
-							}
-						>
+						<div className="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm dark:bg-gray-700">
 							{language === "EN"
 								? blogSection.subtitle.en
 								: blogSection.subtitle.fr}
@@ -41,51 +30,7 @@ export default function BlogSection() {
 								: blogSection.description.fr}
 						</p>
 					</div>
-					<div className="grid w-full max-w-4xl grid-cols-1 gap-4 sm:grid-cols-2 md:gap-6 lg:gap-8">
-						<Card>
-							<CardHeader>
-								<CardTitle>
-									Javascript Fundamentals for Backend Developers
-								</CardTitle>
-								<CardDescription>
-									A basic guide to Javascript on the server
-								</CardDescription>
-							</CardHeader>
-							<CardFooter>
-								<Link href="https://owenstack.vercel.app/blog/javascript-fundamentals-for-backend-developers">
-									<Button variant="ghost">Read More</Button>
-								</Link>
-							</CardFooter>
-						</Card>
-						<Card>
-							<CardHeader>
-								<CardTitle>
-									Building a RESTful API with NodeJS: A Comprehensive Guide
-								</CardTitle>
-								<CardDescription>
-									Detailed explanation and usage of the REST architectural style
-								</CardDescription>
-							</CardHeader>
-							<CardFooter>
-								<Link href="https://owenstack.vercel.app/blog/building-a-restful-api-with-nodejs-a-comprehensive-guide">
-									<Button variant="ghost">Read More</Button>
-								</Link>
-							</CardFooter>
-						</Card>
-						<Card>
-							<CardHeader>
-								<CardTitle>Mastering NodeJS: A beginner&apos;s guide</CardTitle>
-								<CardDescription>
-									NodeJS, core concepts and practical applications
-								</CardDescription>
-							</CardHeader>
-							<CardFooter>
-								<Link href="https://owenstack.vercel.app/blog/mastering-nodejs-a-beginners-guide">
-									<Button variant="ghost">Read More</Button>
-								</Link>
-							</CardFooter>
-						</Card>
-					</div>
+					<TopPosts posts={posts} />
 				</div>
 			</div>
 		</section>
