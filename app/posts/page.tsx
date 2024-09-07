@@ -1,5 +1,6 @@
 import { allPosts } from "@/.contentlayer/generated";
 import Link from "next/link";
+import type { Metadata } from "next";
 
 function formatDate(dateString: string): string {
 	const date = new Date(dateString);
@@ -9,6 +10,16 @@ function formatDate(dateString: string): string {
 		day: "numeric",
 	});
 }
+
+export const metadata: Metadata = {
+	title: "All Posts",
+	twitter: {
+		title: "All Posts",
+	},
+	openGraph: {
+		title: "All Posts",
+	},
+};
 
 export default function Home() {
 	return (

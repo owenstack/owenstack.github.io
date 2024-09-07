@@ -2,6 +2,11 @@ import { FloatingGlass } from "@/components/glass";
 import { HeroSection } from "@/components/home/hero";
 import MobilePage from "@/components/home/mobile";
 import { Separator } from "@/components/ui/separator";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+	title: "Home",
+};
 
 export default function Page() {
 	return (

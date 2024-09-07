@@ -7,6 +7,7 @@ const nextConfig = {
 	images: {
 		remotePatterns: [{ hostname: "api.microlink.io" }],
 	},
+	output: "export",
 };
 
 module.exports = withContentlayer(nextConfig);

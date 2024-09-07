@@ -25,7 +25,6 @@ export const metadata: Metadata = {
 		url: config.base_url,
 	},
 	metadataBase: new URL(config.base_url),
-	manifest: "/site.webmanifest",
 	keywords: config.site_keywords,
 	authors: [{ name: config.github_account }],
 	twitter: {
