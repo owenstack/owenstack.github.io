@@ -6,6 +6,7 @@ const nextConfig = {
 	swcMinify: true,
 	images: {
 		remotePatterns: [{ hostname: "api.microlink.io" }],
+		unoptimized: true,
 	},
 	output: "export",
 };
