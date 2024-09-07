@@ -1,17 +1,17 @@
-import { allPosts } from "@/.contentlayer/generated"
-import Link from "next/link"
+import { FloatingGlass } from "@/components/glass";
+import { HeroSection } from "@/components/home/hero";
+import MobilePage from "@/components/home/mobile";
+import { Separator } from "@/components/ui/separator";
 
-export default function Home() {
-  return (
-    <div className="prose dark:prose-invert">
-      {allPosts.map((post) => (
-        <article key={post._id}>
-          <Link href={post.slug}>
-            <h2>{post.title}</h2>
-          </Link>
-          {post.description && <p>{post.description}</p>}
-        </article>
-      ))}
-    </div>
-  )
+export default function Page() {
+	return (
+		<div className="flex flex-col">
+			<FloatingGlass width={120} height={120} />
+			<HeroSection />
+			<div className="flex flex-col items-center justify-center">
+				<Separator className="my-4 w-[80%]" />
+				<MobilePage />
+			</div>
+		</div>
+	);
 }

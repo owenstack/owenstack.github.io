@@ -1,0 +1,15 @@
+{
+	"base_url": "https://owenstack.github.io",
+	"site_title": "Owen Stack's Portfolio",
+	"site_description": "Personal portfolio and blog showcasing my projects and thoughts",
+	"site_keywords": [
+		"Web Development",
+		"Software Engineering",
+		"JavaScript",
+		"React",
+		"Next.js"
+	],
+	"posts_per_page": 6,
+	"twitter_account": "@oweneefobi",
+	"github_account": "owenstack"
+}

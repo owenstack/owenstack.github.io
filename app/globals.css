@@ -1,3 +1,74 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 243 39% 99%;
+    --foreground: 243 73% 1%;
+    --muted: 213 6% 88%;
+    --muted-foreground: 213 5% 29%;
+    --popover: 243 39% 98%;
+    --popover-foreground: 0 0% 0%;
+    --card: 243 39% 98%;
+    --card-foreground: 0 0% 0%;
+    --border: 243 7% 92%;
+    --input: 243 7% 92%;
+    --primary: 243 68% 48%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 213 68% 48%;
+    --secondary-foreground: 0 0% 100%;
+    --accent: 273 68% 48%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 20 94% 35%;
+    --destructive-foreground: 0 0% 100%;
+    --ring: 243 68% 48%;
+    --radius: 0.5rem;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+  }
+  .dark {
+    --background: 243 45% 3%;
+    --foreground: 243 20% 99%;
+    --muted: 213 6% 12%;
+    --muted-foreground: 213 5% 71%;
+    --popover: 243 45% 4%;
+    --popover-foreground: 0 0% 100%;
+    --card: 243 45% 4%;
+    --card-foreground: 0 0% 100%;
+    --border: 243 7% 12%;
+    --input: 243 7% 12%;
+    --primary: 243 68% 48%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 213 68% 48%;
+    --secondary-foreground: 0 0% 100%;
+    --accent: 273 68% 48%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 20 94% 60%;
+    --destructive-foreground: 0 0% 0%;
+    --ring: 243 68% 48%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  @font-face {
+    font-family: 'Belgrano';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/header.ttf') format('ttf')
+  }
+}
