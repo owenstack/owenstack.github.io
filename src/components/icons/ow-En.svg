@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="150" height="350" viewBox="0 0 150 350" fill="none" stroke="none" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <g style="fill:#C5CAE9;fill-rule:evenodd;mix-blend-mode:normal;">
+    <path id="Path" d="M50 0C22.3857 0 0 22.3858 0 50L0 300C0 327.614 22.3857 350 50 350L150 350L150 300L50 300L50 200L150 200L150 150L50 150L50 50L150 50L150 0L50 0L50 0Z" />
+    <path d="M51 50L150 50L150 0L50 0C22.3857 0 0 22.3858 0 50L0 300C0 327.614 22.3857 350 50 350L150 350L150 300L50 300L50 200L150 200L150 150L50 150L50 50L51 50ZM149 151L49 151L49 49L149 49L149 1L50 1Q29.7031 1.00006 15.3517 15.3518Q1 29.7039 1 50L1 300Q1 320.296 15.3517 334.648Q29.7031 349 50 349L149 349L149 301L49 301L49 199L149 199L149 151Z" fill-rule="evenodd" style="fill:#3F51B5;fill-rule:evenodd;" />
+  </g>
+</svg>

@@ -6,7 +6,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "@/consts";
 import { getCollection } from "astro:content";
 import FormattedDate from "@/components/FormattedDate.astro";
 
-const posts = (await getCollection("blog")).sort(
+const posts = (await getCollection("project")).sort(
 	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
 ---
@@ -16,11 +16,12 @@ const posts = (await getCollection("blog")).sort(
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
-	<body class="bg-background">
+	<body class="bg-background h-screen">
 		<Header />
 		<main class="container mx-auto px-4 py-8">
-			<section>
-				<ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <section>
+               {posts.length > 0 ? (
+                <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 					{
 						posts.map((post) => (
 							<li class="bg-accent rounded-lg shadow-md overflow-hidden">
@@ -37,7 +38,14 @@ const posts = (await getCollection("blog")).sort(
 						))
 					}
 				</ul>
-			</section>
+               ) : (
+                <div class="text-center py-12">
+                    <h2 class="text-2xl font-bold mb-4">Work in Progress</h2>
+                    <p class="text-lg text-foreground/70">We're currently working on adding exciting projects to this page. Check back soon for updates!</p>
+                    <p class="mt-4 text-accent">In the meantime, feel free to explore other sections of our site.</p>
+                </div>
+               )}
+            </section>
 		</main>
 		<Footer />
 	</body>
