@@ -2,7 +2,7 @@ name: Deploy Astro site to Pages
 
 on:
   push:
-    branches: ["master"] # or replace with your branch name
+    branches: ["master"] # adjust if needed
   workflow_dispatch:
 
 permissions:
@@ -27,9 +27,7 @@ jobs:
         run: bun install
 
       - name: Build with Astro
-        run: bun astro build \
-          --site "${{ github.repository_owner }}.github.io" \
-          --base "/${{ github.repository }}/"
+        run: bun astro build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
