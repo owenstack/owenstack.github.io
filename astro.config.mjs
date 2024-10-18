@@ -11,7 +11,7 @@ import react from "@astrojs/react";
 // https://astro.build/config
 export default defineConfig({
 	site: "https://owenstack.github.io",
-	base: "/owenstack.github.io/",
+	base: "/",
 	integrations: [
 		mdx(),
 		sitemap(),
