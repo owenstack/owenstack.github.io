@@ -18,26 +18,18 @@ jobs:
       - name: Checkout your repository using git
         uses: actions/checkout@v4
 
-      - name: Install Bun
-        uses: oven-sh/setup-bun@v1
+      - name: Install, build, and upload
+        uses: withastro/action@v3
         with:
-          bun-version: latest
-
-      - name: Install dependencies using Bun
-        run: bun install
-
-      - name: Build with Astro
-        run: bun astro build
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: dist
+          package-manager: bun@latest
 
   deploy:
     name: Deploy to GitHub Pages
     needs: build
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
