@@ -5,7 +5,7 @@ pubDate: 'Nov 18 2024'
 heroImage: '/images/gradient-1.webp'
 ---
 
-### **Lesson Plan: Introduction to Data for Data Analysis (4 Hours)**
+### **Lesson Plan: Introduction to Data for Data Analysis**
 
 #### **Lesson Objective**
 By the end of the session, learners will:
@@ -18,13 +18,13 @@ By the end of the session, learners will:
 
 ### **Lesson Outline**
 
-#### **Hour 1: Understanding Data**
-1. **What is Data? (15 minutes)**
+#### **Understanding Data**
+1. **What is Data?**
    - Definition of data: Data refers to raw facts and figures that can be processed to extract meaningful information. It can be structured (organized in tables) or unstructured (like text or images).
    - Data vs. Information: The transformation of data into meaningful insights. [Data vs Information](https://bloomfire.com/blog/data-vs-information/)
    - Examples of data in everyday life (e.g., weather reports, social media metrics).
 
-2. **Types of Data (20 minutes)**
+2. **Types of Data**
    - Qualitative vs. Quantitative Data.
    - Structured vs. Unstructured Data.
    - Examples:
@@ -33,7 +33,7 @@ By the end of the session, learners will:
 
      Reference(s): [Types of Data](https://www.coursera.org/articles/types-of-data), [Types of Data](https://www.coursera.org/in/articles/types-of-data), [Unstructured data and structured data](https://www.questionpro.com/blog/structured-data/)
 
-3. **Sources of Data (25 minutes)**
+3. **Sources of Data**
    - Internal vs. External Sources:
      - Internal: Company databases, employee records.
      - External: Market research, social media analytics.
@@ -47,19 +47,19 @@ By the end of the session, learners will:
 
 ---
 
-#### **Hour 2: Why Data Matters**
-1. **The Role of Data in Modern Business (20 minutes)**
+#### **Why Data Matters**
+1. **The Role of Data in Modern Business**
    - How data drives decision-making (examples: pricing strategies, market trends).
    - Real-world examples of data-driven companies (e.g., Amazon, Google).
 
    Reference(s): [Advantages of data driven decision making by Harvard Business School](https://online.hbs.edu/blog/post/data-driven-decision-making)
 
-2. **Applications of Data Analysis (20 minutes)**
+2. **Applications of Data Analysis**
    - Understanding customer behavior.
    - Improving operational efficiency.
    - Forecasting and risk management.
 
-3. **Benefits of Data-Driven Decision-Making (20 minutes)**
+3. **Benefits of Data-Driven Decision-Making**
    - Accuracy and precision in insights.
    - Competitive advantage in the market.
    - Cost reduction and profitability.
@@ -70,27 +70,27 @@ By the end of the session, learners will:
 
 ---
 
-#### **Hour 3: Basics of Data Collection and Cleaning**
-1. **Data Collection Techniques (20 minutes)**
+#### **Basics of Data Collection and Cleaning**
+1. **Data Collection Techniques**
    - Surveys and Questionnaires.
    - Observations and Experiments.
    - Web scraping and API integration (brief mention).
 
-   Reference(s): [PiggyVest Savings Report 2023](https://www.piggyvest.com/reports/2023), [PiggyVest Savings Report 2024](https://www.piggyvest.com/reports/2024)
+   Reference(s): [PiggyVest Savings Report 2023](https://www.piggyvest.com/reports/2023), [PiggyVest Savings Report 2024](https://www.piggyvest.com/reports/2024), [Data Collection by Simplilearn](https://www.simplilearn.com/what-is-data-collection-article), [Data Collection Techniques](https://safetyculture.com/topics/data-collection/data-collection-techniques/)
 
-2. **Introduction to Data Cleaning (25 minutes)**
+2. **Introduction to Data Cleaning**
    - Definition: Removing errors, duplicates, and inconsistencies.
    - Importance of clean data for accurate analysis.
    - Examples of errors: Typos, missing values, outliers.
 
-   Reference(s): [Data Cleansing by Wikipedia](https://en.wikipedia.org/wiki/Data_cleansing), [What is data cleansing by Career Foundry](https://careerfoundry.com/en/blog/data-analytics/what-is-data-cleaning/)
+   Reference(s): [Data Cleansing by Wikipedia](https://en.wikipedia.org/wiki/Data_cleansing), [What is data cleansing by Career Foundry](https://careerfoundry.com/en/blog/data-analytics/what-is-data-cleaning/), [Data Cleaning by Career Foundry](https://careerfoundry.com/en/blog/data-analytics/what-is-data-cleaning/)
 
    **Activity**: Display a messy dataset and ask learners to identify issues.
 
 ---
 
-#### **Hour 4: Data in Action**
-1. **Exploratory Data Analysis (EDA) (30 minutes)**
+#### **Data in Action**
+1. **Exploratory Data Analysis (EDA)**
    - What is EDA? Gaining insights from raw data.
    - Overview of basic techniques:
      - Descriptive statistics: Mean, median, mode.
@@ -99,12 +99,12 @@ By the end of the session, learners will:
 
    Reference(s): [Exploratory data analysis by IBM](https://www.ibm.com/topics/exploratory-data-analysis), [Exploratory data analysis by Career Foundry](https://careerfoundry.com/en/blog/data-analytics/exploratory-data-analysis/)
 
-2. **Case Study: Data-Driven Insights (20 minutes)**
+2. **Case Study: Data-Driven Insights**
    - Present a real-life business scenario:
      - Example: Open Discussion on ways DDI can be applied in students' current workplace, UNN ICT
    - **Activity**: Learners practice drawing insights from a simplified dataset.
 
-3. **Future Steps in Data Analysis (10 minutes)**
+3. **Future Steps in Data Analysis**
    - Overview of advanced concepts:
      - Predictive analytics.
      - Machine learning.
